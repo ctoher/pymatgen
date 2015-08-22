@@ -657,12 +657,12 @@ def bcnt (vol0pres, gfe0pres, b0, statcalc, agl_data):
 #
 #.....mnbrak - brackets a minimum of the function f.
 #
-#     Given a function FUNC, and two distinct initial points AX and BX,
+#     Given a function, and two distinct initial points ax and bx,
 #     this routine searches in the downhill direction (defined by the
 #     function as evaluated at the initial points) and returns new
-#     points AX, BX, and CX which bracket a minimum of the function.
-#     Also returned are the function values at the three points: FA, FB,
-#     and FC.
+#     points ax, bx, and cx which bracket a minimum of the function.
+#     Also returned are the function values at the three points: fa, fb,
+#     and fc.
 #
 # Adapted from original Fortran version written by M. A. Blanco et al.
 # See Computer Physics Communications 158, 57-72 (2004) and Journal of Molecular Structure (Theochem) 368, 245-255 (1996) for details
@@ -731,11 +731,11 @@ def mnbrak (ax, bx, cx, agl_data):
 #
 #.....brent - unidimensional minimization of f in the range [ax,cx].
 #
-#    Given a function F, and a bracketing triplet of abscissas this
-#    routine isolates the minimum to a fractional precission of TOL
-#    using Brent's method. The bracketing triplet must be such that BX
-#    is between AX and CX, and that F(BX) is less than both F(AX) and
-#    F(CX). The abscissa of the minimum is returned as XMIN, and the
+#    Given a function, and a bracketing triplet of abscissas this
+#    routine isolates the minimum to a fractional precission of tol
+#    using Brent's method. The bracketing triplet must be such that bx
+#    is between ax and cx, and that f(bx) is less than both f(ax) and
+#    f(cx). The abscissa of the minimum is returned as xmin, and the
 #    minimum function value as BRENT.
 #
 # Adapted from original Fortran version written by M. A. Blanco et al. 
