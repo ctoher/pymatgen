@@ -1,6 +1,21 @@
 Change log
 ==========
 
+v4.3.1
+------
+* Upgrade monty and spglib requirements for bug fixes.
+* Updates to feff support (Kiran).
+
+v4.3.0
+------
+* Massive update to elastic module. (Joey Montaya)
+* Pathfinder algorithm for NEB calculations. (Ziqing Rong)
+* Wheels for Windows and Mac Py27 and Py35.
+
+v4.2.5
+------
+* Bug fix for BSPlotter.
+
 v4.2.4
 ------
 * Bug fix for kpoint weight calculation for Monkhorst meshes.

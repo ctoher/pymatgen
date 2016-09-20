@@ -1,6 +1,7 @@
 Change log
 ==========
 
-v4.2.4
+v4.3.1
 ------
-* Bug fix for kpoint weight calculation for Monkhorst meshes.
+* Upgrade monty and spglib requirements for bug fixes.
+* Updates to feff support (Kiran).

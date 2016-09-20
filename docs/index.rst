@@ -99,6 +99,17 @@ compatible. Our approach is to have a single codebase support Python 2.7 and
 Getting pymatgen
 ================
 
+For absolute newbies
+--------------------
+
+If you are absolutely new to Python and/or are using Windows, the easiest
+installation process is using conda. Please go to the
+:doc:`installation page </installation>` for step-by-step instructions for
+all platforms.
+
+Standard install
+----------------
+
 .. note:: Preparation
 
     Before installing pymatgen, you may need to first install a few critical
@@ -121,30 +132,12 @@ any system is to use pip::
 
     pip install pymatgen
 
-If you would like to use the enumeration capabilities powered by Gus Hart's
-enumlib or perform Bader charge analysis powered by the Bader analysis code
-of the Henkelmann group, you can install it using the pmg command line tool
-as follows::
+Wheels for Mac and Windows have been built for convenience.
 
-   pmg setup --install enum
-   pmg setup --install bader
-
-Detailed installation instructions for various platforms (Mac and Windows)
-are given on this :doc:`page </installation>`, including how to setup your
-machine for POTCAR generation, Materials Project REST interface usage, etc.
-
-.. toctree::
-   :maxdepth: 2
-
-   installation
-
-Developmental version
----------------------
-
-The bleeding edge developmental version is at the pymatgen's `Github repo
+The bleeding edge developmental version is at the pymatgen `Github repo
 <https://github.com/materialsproject/pymatgen>`_. The developmental
 version is likely to be more buggy, but may contain new features. The
-Github version include test files as well for complete unit testing. After
+Github version include complete test files. After
 cloning the source, you can type in the root of the repo::
 
     pip install .
@@ -153,12 +146,15 @@ or to install the package in developmental mode::
 
     pip install -e .
 
-To run the very comprehensive suite of unittests included with the
-developmental version, make sure you have nose installed and then just type::
+Detailed installation instructions for various platforms (Mac and Windows)
+are given on this :doc:`page </installation>`, including installation of
+option dependencies, set up for POTCAR generation, Materials Project REST
+interface usage, setup for developers, etc.
 
-    nosetests
+.. toctree::
+   :maxdepth: 2
 
-in the pymatgen root directory.
+   installation
 
 Shared cluster installation
 ---------------------------
@@ -339,7 +335,7 @@ typical installation routes.
 Here, we will discuss the most versatile of these scripts, known as
 pmg. The typical usage of pmg is::
 
-    pmg {analyze, plotdos, plotchgint, convert, symm, view, compare} additional_arguments
+    pmg {setup, config, analyze, plotdos, plotchgint, convert, symm, view, compare} additional_arguments
 
 At any time, you can use ``"pmg --help"`` or ``"pmg subcommand
 --help"`` to bring up a useful help message on how to use these subcommands.
